@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/bootstrap-4.5.0-dist/css/bootstrap.min.css' integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Main Navbar -->
+        <% include partials/navbar.ejs {page_name:page_name} %>
+        <section class="container about-section">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="/images/xamtiles2.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="yellow-dark">About Us</h3>
+                    <p>XAMARANO ICT is a subsidiary branch of  XAMARANO CONCEPT, an ict  incoporation that has been in existence 
+                        since 2000, with a trail of outstanding and excellent projects and deliveries. <br><br> We specialise in 
+                        rendering very important needs of businesses including Graphics designs; coporate branding of business, 
+                        promotions and helping businesses to standout at the services that they render and to reach a greater multitude 
+                        of customers. We render web design services and social media marketing to help you create that online presence that 
+                        you need to move your business forward. We have a team of experts and professionals who specialize in repairs of all 
+                        kinds of phones and computers and we also house quality gadgets and accesories for purchase. <br><br> At Xamarano ICT 
+                        we have a culture of standing out in simplicity and excellence, putting the needs of our customera first and giving them 
+                        the best possible satisfaction. This culture has been handed down the years among out team of expert personels and has kept 
+                        us moving in excellence. <br><br>Reach out to us at Behind Jayus plaza opposite KSU main gate Anyigba Kogi state or simply <a href="#contact-section">contact us.</a>  
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <% include partials/contact.ejs %>
+    </div>
+    <!-- footer -->
+    <%include partials/footer.ejs %>
+</body>
+</html>

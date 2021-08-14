@@ -1,0 +1,355 @@
+/*----------------------------*/
+/*--------  General  ---------*/
+/*----------------------------*/
+/*Extralarge devices (xl) & General*/
+html, body{
+  overflow-x: hidden;
+}
+body {
+  font: 16px Georgia, Helvetica, Arial, sans-serif;
+  line-height: 23px;
+  color: #343A40;
+}
+h1{
+  font-size: 80px;
+  font-weight: bold;
+}
+h3{
+  font-size:25px;
+  font-weight: bolder;
+  color: black;
+}
+h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+} 
+section{
+  margin-top: 40px;
+}
+.yellow-lite{
+  color: #ffff00;
+  text-shadow:0px .5px 1px #222436;
+}
+.yellow-dark{
+  color:#FED210; /*#FFAF30*/
+  text-shadow:1px .5px 1px #222436;
+}
+.black{
+  color:#181b29;
+}
+.blue{
+  color: #193cec;
+}
+.white{
+  color: #fff;
+}
+.bg-dark{
+  background-color:#343A40;
+}
+.bg-blue{
+  background-color:#193cec;
+  color: #fff;
+}
+.bg-blue:hover{
+  background-color:#0E14A2;
+  color: #fff;
+}
+.icon-bg{
+  height: 30px;
+  width: 30px;
+  display: inline;
+}
+.icon-sm{
+  height: 15px;
+  width: 15px;
+  display: inline;
+}
+/*------  Main navbar ------*/
+.navbar{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 280;
+  background: rgba(0,0,0,0.2);
+  border-bottom: #FED210 solid 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar .navbar-brand img{
+  height: 60px;
+  width: 80px;
+  margin-bottom: 0px;
+
+}
+.navbar-dark .navbar-nav .nav-link{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #FED210;
+  text-shadow:0px 4px 8px #222436;
+  font-size: 18px;
+  text-align: right;
+  padding-right: 10px;
+  /* font-weight: bold; */
+} 
+.navbar-dark .navbar-nav .nav-link hover{
+  background-color:#343A40;
+  text-shadow:0px 4px 8px #222436;
+  color: #FED210;
+  border-radius: 7px;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+  background-color:#FED210;
+  color: #050505;
+  text-shadow: unset;
+  border-radius: 7px;
+}
+
+/*------  Home carousel ------*/
+.carousel{
+  margin-bottom: 60px;
+}
+.carousel-item{
+  background-size: cover;
+  /* background-size: auto; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  background-position: center;
+  min-width: 100%;
+  height: 620px;
+  /* height: 100%; */
+  padding-top: 250px;
+  /* transform: translateY(-50%); */
+  text-align: center;
+}
+.carousel-item .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .5;
+  background: #343A40;
+}
+.carousel-item h1 {
+  font-family:Oleo Script,cursive;
+  text-shadow:0px 4px 8px #222436;"
+}
+.carousel-item h6 {
+  font-family: 'comic sans ms', cursive; 
+  /* padding-left: 280px; */
+  text-shadow:0px 6px 14px #222436;
+  float: right;
+  bottom: 0px;
+} 
+
+/* Services */
+.services h1{
+  font-size: 80px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-block-start: 0px;
+  /* margin-left: 0px; */
+}
+.header{
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 7px ;
+}
+.services .business div{
+  margin-bottom: 40px;
+}
+.services .business img{
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+
+.services .business-images img{
+  height: 250px;
+  width: auto;
+  margin-top: -20px;
+
+}
+.services .business-images #mid-img{
+  margin-left: 150px;
+}
+
+/*------  Contact section ------*/
+.contact-section h2{
+  margin-bottom: 50px;
+}
+.contact-section .row{
+  margin-bottom: 30px;
+}
+.contact-section .btn{
+  margin: auto;
+}
+
+/*------  footer section ------*/
+footer{
+  /* margin-top: 50px; */
+  margin: auto;
+  padding: 30px 0px;
+  left : 0;
+  right: 0;
+}
+.footer-home{
+  text-align: center;
+  background-color: #1c202c;
+  padding: 20px 20px;
+}
+
+footer ul li a{
+  color: #FED210;
+}
+footer .footer-bottom{
+  text-align: center;
+}
+ 
+
+/*------------------------------*/
+/*------  Courses Page  --------*/
+/*------------------------------*/
+.courses-section{
+  margin-top: 150px;
+}
+.courses-section .card{
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  margin: 0px auto;
+  transition: 0.3s;
+}
+.courses-section .card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+.courses-section .card div{
+  padding: 0px 0px 2px 0px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.courses-section .card h4{
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 2px solid #FED210;
+  padding: 10px 0px;
+}
+.courses-section .card img{
+  margin: 0px auto 20px auto;
+  height: 60px;
+  width: 60px;
+}
+.courses-section .card ul{
+  margin:auto;
+}
+.courses-section .card a{
+  margin: 20px auto;
+}
+.row2{
+  border: 4px solid #FED210;
+  margin: 70px -50px;
+  border-radius: 20px;
+  padding:20px 10px 50px 10px;
+}
+.webhead-div{
+  text-align: center;
+  position: relative;
+  top: -40px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 auto;
+}
+.webhead{
+  text-align: center;
+  padding: 5px 30px;
+  border: 2px solid #FED210;
+  border-radius: 10px;
+}
+
+
+/*------------------------------*/
+/*------  About Page  --------*/
+/*------------------------------*/
+.about-section{
+  margin-top: 120px;
+}
+.about-section .row img{
+  width: 85%;
+}
+
+
+@media(max-width: 1200px){
+/*large devices (lg)*/
+
+  h1{
+    font-size: 65px;
+  }
+  .carousel-item{
+    height:700px ;
+  }
+}
+  
+@media(max-width: 992px){
+/*medium devices (md)*/
+  h1{
+    font-size: 45px;
+  }
+  .services h1{
+    font-size: 65px;
+    padding: 10px 20px;
+  }
+  .services .business-images{
+    margin: 30px 0px;
+  }
+  /* .row2{
+
+    margin: 70px -10px;
+    border-radius: 20px;
+    padding:20px 10px 50px 10px;
+  } */
+}
+
+@media(max-width: 768px){
+/*small devices (sm)*/
+  h1{
+    font-size: 35px;
+  }
+  .services .business-images img{
+    height: 42%;
+    width: 70%;
+    margin: -20px auto auto 26px;
+  
+  }
+  .services .business-images #mid-img{
+    margin-left: 75px;
+  }
+  .contact-section{
+    margin-top: 100px;
+  }
+
+  .quick-links{
+    margin: 25px 25%;
+  }
+  .courses-section .card{
+    margin: 20px auto;
+  }
+  .row2{
+    margin: 70px -13px;
+  }
+
+  /*------------------------------*/
+  /*------  About Page  --------*/
+  /*------------------------------*/
+  .about-section .row img{
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 567px){
+/*extrasmall devices (xs)*/
+h1{
+  font-size: 16px;
+}
+}

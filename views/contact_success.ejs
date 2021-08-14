@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/bootstrap-4.5.0-dist/css/bootstrap.min.css' integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#contactModal').modal('show');    
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+       <!-- Main Navbar -->
+      <% include partials/navbar.ejs %>
+      <!-- Home Carousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000" style="background-image:url('images/image8.jpg');">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-8 offset-2 yellow-lite">
+                  <h1 style="font-family:Oleo Script, cursive;text-shadow:0px 4px 10px #222436;">X A M A R A N O<br>ICT</h1>
+                  <h5 style="font-family: 'comic sans ms', cursive; padding-left: 280px;text-shadow:0px 6px 14px #222436;">...Learning for You</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+      Launch demo modal
+      </button> -->
+      <!-- Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title yellow-lite" id="exampleModalLabel">Xamarano Ict</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for contacting Xamarano Ict! Your message was recieved and your concern will be treated very soon.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function(){
+      var refererUrl = <%- JSON.stringify(refererUrl)%>;
+      $('#contactModal').on('hidden.bs.modal', function(){
+          window.location=refererUrl;
+      });
+    });
+  </script>
+</html>
+  

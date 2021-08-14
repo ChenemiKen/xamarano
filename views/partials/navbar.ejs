@@ -1,0 +1,39 @@
+<nav role="navigation" class="navbar sticky-top navbar-expand-xl navbar-dark">
+  <a class="navbar-brand" href="#">
+    <img src="/images/xamarano2.png" alt="">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+    <div class="navbar-nav ml-auto justify-content-end">
+      <a class="navbar-item nav-link <%= page_name == 'home' ? 'active' : '' %>" href="/">Home</a>
+      <a class="navbar-item nav-link <%= page_name == 'about' ? 'active' : '' %>" href="/about">About</a>      
+      <a class="navbar-item nav-link <%= page_name == 'courses' ? 'active' : '' %>" href="/courses">Courses</a>
+      <a id="contact-link" class="navbar-item nav-link <%= page_name == 'contact' ? 'active' : '' %>" href="#contact-section">Contact</a>
+      <% if(typeof contact_data != 'null' && page_name == 'contact'){ %>
+        <script>
+          var contact_data= <%- JSON.stringify(contact_data)%>;
+          console.log(contact_data);
+          document.getElementById("contact-link").click();
+        </script>
+      <% } %> 
+    </div>
+  </div>
+</nav>
+
+<script>
+  var pageName = <%- JSON.stringify(page_name)%>;
+  if(pageName != 'home'){
+    var navbar = document.getElementsByClassName('navbar')[0];
+    var styles = {
+      background: 'linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/image8.jpg)',
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center',
+    }
+    Object.assign(navbar.style,styles);
+  }
+</script>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/bootstrap-4.5.0-dist/css/bootstrap.min.css' integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Main Navbar -->
+      <% include partials/navbar.ejs %>
+      <!-- Home Carousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000" style="background-image:url('images/image5.jpg');">
+            <!-- <img src="/images/pcb-exmas.jpg" class="d-block w-100" alt="..."> -->
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-8 offset-2 yellow-lite">
+                  <h1>X A M A R A N O <br>ICT</h1>
+                  <h6>...Learning for You</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="3000" style="background-image:url('images/image6.jpg');">
+            <!-- <img src="/images/ramports.jpg" class="d-block w-100" alt="..."> -->
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-8 offset-2 yellow-lite">
+                  <h1>X A M A R A N O <br>ICT</h1>
+                  <h6>...Learning for You</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="3000" style="background-image:url('images/image8.jpg');">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-8 offset-2 yellow-lite">
+                  <h1>X A M A R A N O<br>ICT</h1>
+                  <h6>...Learning for You</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Services section -->
+      <div class="container services">
+        <!-- What do we do -->
+        <div class="row">
+          <div class="col-sm-9 col-md-7 ">
+            <h1 class="bg-dark">WHAT<br>WE <span class="yellow-dark">DO?</span></h1>
+          </div>
+          <div class="col-sm-3 col-md-5 ">
+            <ul>
+              <li><a href="">Business</a></li>
+              <li><a href="">Courses</a></li>
+              <li><a href="">Sales</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Business section -->
+        <section id="business-section">
+          <h4 class="bg-dark col-5 col-md-3 offset-2 yellow-dark header ">Business</h4>
+          <div class="row">
+            <div class="col-lg-6" style="margin-top: 45px;">
+              <div class="row business">
+                <div class="col-sm-5 left">
+                  <hr>
+                  <h4>Computer & Phone<br>Repairs</h4>
+                  <img src="images/laptop-settings.png" alt="">
+                  <!-- TODO add icons of laptop phone and spanner -->
+                  <p>We have experts to carry out any form of repair required on any type of computer and android or iPhones.</p>
+                  <a href="#"><button class="btn bg-blue">See More</button></a>
+                </div>
+                <div class="col-sm-5 right">
+                  <hr>
+                  <h4>Graphics Designs <br>& Visuals</h4>
+                  <img src="images/mobile.png" alt="">
+                  <!-- TODO add icons that suit graphics design -->
+                  <p>We offer the best of classy visual designs to make your brand stand out and glow with professional dexterity.</p>
+                  <a href="#"><button class="btn bg-blue">See More</button></a>
+                </div>
+                <div class="col-sm-5">
+                  <hr>
+                  <h4>Web Design &<br>Development</h4>
+                  <img src="images/web-design.png" alt="">
+                  <!-- TODO add icons that suit we design -->
+                  <p>We build outstanding websites and softwares to make your business or brand stand out amazing</p>
+                  <a href="#"><button class="btn bg-blue">See More</button></a>
+                </div>
+                <div class="col-sm-5">
+                  <hr>
+                  <h4>Corporate Branding<br>& Consultancy</h4>
+                  <img src="images/consultation.png" alt="">
+                  <!-- TODO add icons that suit we design -->
+                  <p>We reimagine your business, Our brilliant professional minds are readily yours to tap. </p>
+                  <a href="#"><button class="btn bg-blue">See More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 business-images">
+              <img src="images/ram.jpg" alt="">
+              <img id="mid-img" src="images/image9.jpg" alt="">
+              <img src="images/image6.jpg" alt="">
+            </div>
+          </div>
+        </section>
+      </div><!-- Business section -->
+
+      <!-- Contact section -->
+      <% include partials/contact.ejs %>
+    </div>
+    <!-- footer -->
+    <%include partials/footer.ejs %>
+   
+ 
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
